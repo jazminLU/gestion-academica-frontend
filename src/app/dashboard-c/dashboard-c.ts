@@ -46,8 +46,9 @@ export class DashboardC implements OnInit, AfterViewInit {
       const countMap = new Map<string, number>();
       materias.forEach(m => countMap.set(m.nombre, 0));
       alumnos.forEach(a => {
-        const key = a.materia as string;
-        countMap.set(key, (countMap.get(key) ?? 0) + 1);
+        a.materias.forEach(key => {
+          countMap.set(key, (countMap.get(key) ?? 0) + 1);
+        });
       });
 
       this.labels = [...countMap.keys()];

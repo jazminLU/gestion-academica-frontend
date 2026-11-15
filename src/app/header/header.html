@@ -15,6 +15,8 @@
       <a routerLink="/dashboardA" routerLinkActive="active" (click)="closeMenu()">Alumnos</a>
       <a routerLink="/dashboardB" routerLinkActive="active" (click)="closeMenu()">Materias</a>
       <a routerLink="/dashboardC" routerLinkActive="active" (click)="closeMenu()">Dashboard</a>
+      <a *ngIf="!isAdmin()" routerLink="/mis-materias" routerLinkActive="active" (click)="closeMenu()">Mis materias</a>
+      <a *ngIf="isAdmin()" routerLink="/solicitudes" routerLinkActive="active" (click)="closeMenu()">Solicitudes</a>
       <button class="logout-btn" type="button" (click)="logout()">Salir</button>
     </ng-container>
 

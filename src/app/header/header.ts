@@ -29,6 +29,10 @@ export class Header {
     return this.authService.isLoggedIn();
   }
 
+  isAdmin(): boolean {
+    return this.authService.isAdmin();
+  }
+
   logout() {
     this.authService.logout();
     this.closeMenu();

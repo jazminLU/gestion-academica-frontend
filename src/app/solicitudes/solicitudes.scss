@@ -1,0 +1,76 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+
+  .page-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--app-text);
+  }
+}
+
+.panel {
+  background: white;
+  border-radius: var(--app-radius-lg);
+  box-shadow: var(--app-shadow);
+  padding: 24px;
+  animation: panel-in 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+
+  @media (max-width: 600px) {
+    padding: 16px;
+    border-radius: var(--app-radius-md);
+  }
+}
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--app-radius-md);
+  border: 1px solid var(--app-border);
+}
+
+.full-width {
+  width: 100%;
+  min-width: 600px;
+
+  ::ng-deep .mat-mdc-header-row {
+    background: #f8f6fd;
+  }
+
+  ::ng-deep .mat-mdc-header-cell {
+    color: var(--app-text);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  ::ng-deep .mat-mdc-row:hover {
+    background: #faf9ff;
+  }
+}
+
+.acciones-cell {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0;
+
+  button {
+    border-radius: var(--app-radius-pill);
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--app-text-muted);
+  font-size: 15px;
+}

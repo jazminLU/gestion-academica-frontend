@@ -1,9 +1,7 @@
-export interface Alumno{
+export interface Alumno {
 
     id: number;
-    nombre:string;    
-    materia:string;
-    email: string;
+    nombre: string;
+    materias: string[];
 
-    
 }

@@ -47,8 +47,8 @@ export class AlumnosComponent implements OnInit {
     public authService: AuthService,
   ) {
     this.displayedColumns = this.authService.isAdmin()
-      ? ['id', 'nombre', 'email', 'materia', 'acciones']
-      : ['id', 'nombre', 'email', 'materia'];
+      ? ['id', 'nombre', 'materias', 'acciones']
+      : ['id', 'nombre', 'materias'];
   }
 
   ngOnInit(): void {
