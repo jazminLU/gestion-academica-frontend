@@ -43,4 +43,18 @@
     <button mat-stroked-button color="primary">Ver dashboard</button>
   </div>
 
+  <div class="card" *ngIf="isAdmin()" routerLink="/solicitudes">
+    <span class="card-icon-wrap"><mat-icon class="card-icon">fact_check</mat-icon></span>
+    <h3>Solicitudes</h3>
+    <p>Revisá y aprobá o rechazá los pedidos de inscripción de los alumnos.</p>
+    <button mat-stroked-button color="primary">Ver solicitudes</button>
+  </div>
+
+  <div class="card" *ngIf="!isAdmin()" routerLink="/mis-materias">
+    <span class="card-icon-wrap"><mat-icon class="card-icon">assignment_turned_in</mat-icon></span>
+    <h3>Mis materias</h3>
+    <p>Consultá tus inscripciones y solicitá anotarte a materias nuevas.</p>
+    <button mat-stroked-button color="primary">Ver mis materias</button>
+  </div>
+
 </div>

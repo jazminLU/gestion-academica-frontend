@@ -30,6 +30,10 @@ export class Home {
     return this.authService.getUsuario()?.nombre ?? '';
   }
 
+  isAdmin(): boolean {
+    return this.authService.isAdmin();
+  }
+
   navegarAlDashboardB() {
     this.router.navigate(['/dashboardB']);
   }
