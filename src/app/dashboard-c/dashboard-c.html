@@ -1,0 +1,25 @@
+<div class="page-container">
+
+  <h2 class="page-title">Dashboard</h2>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <span class="stat-number">{{ totalAlumnos }}</span>
+      <span class="stat-label">Alumnos registrados</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">{{ totalMaterias }}</span>
+      <span class="stat-label">Materias disponibles</span>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <canvas #barChart></canvas>
+    </div>
+    <div class="chart-card">
+      <canvas #doughnutChart></canvas>
+    </div>
+  </div>
+
+</div>

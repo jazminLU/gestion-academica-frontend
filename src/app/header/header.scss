@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  .navbar-brand {
+    .brand-title {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 22px;
+      background: white;
+      border-radius: 2px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    &.open {
+      span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 4px;
+
+    a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      &.active {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .logout-btn {
+      color: rgba(255, 255, 255, 0.85);
+      background: transparent;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+
+      &:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+
+    .menu-toggle {
+      display: flex;
+    }
+
+    .navbar-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      gap: 0;
+      background: #1565c0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.25s ease;
+      z-index: 20;
+
+      &.open {
+        max-height: 320px;
+      }
+
+      a {
+        padding: 14px 24px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+  }
+}

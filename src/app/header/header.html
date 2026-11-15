@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span class="brand-title">Gestión Académica</span>
+  </div>
+
+  <button class="menu-toggle" type="button" (click)="toggleMenu()" [class.open]="menuOpen" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="navbar-links" [class.open]="menuOpen">
+    <ng-container *ngIf="isLoggedIn()">
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">Home</a>
+      <a routerLink="/dashboardA" routerLinkActive="active" (click)="closeMenu()">Alumnos</a>
+      <a routerLink="/dashboardB" routerLinkActive="active" (click)="closeMenu()">Materias</a>
+      <a routerLink="/dashboardC" routerLinkActive="active" (click)="closeMenu()">Dashboard</a>
+      <button class="logout-btn" type="button" (click)="logout()">Salir</button>
+    </ng-container>
+
+    <ng-container *ngIf="!isLoggedIn()">
+      <a routerLink="/login" routerLinkActive="active" (click)="closeMenu()">Ingresar</a>
+      <a routerLink="/register" routerLinkActive="active" (click)="closeMenu()">Registrarse</a>
+    </ng-container>
+  </div>
+</nav>

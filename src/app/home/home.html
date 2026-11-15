@@ -1,0 +1,33 @@
+<div class="hero">
+  <span class="hero-welcome" *ngIf="nombreUsuario">
+    <span class="hero-welcome-wave">👋</span>
+    Bienvenido, {{ nombreUsuario }}
+  </span>
+  <h1 class="hero-title">Sistema de Gestión Académica</h1>
+  <p class="hero-subtitle">Administrá alumnos, materias y más desde un solo lugar.</p>
+</div>
+
+<div class="cards-grid">
+
+  <div class="card" routerLink="/dashboardA">
+    <mat-icon class="card-icon">school</mat-icon>
+    <h3>Alumnos</h3>
+    <p>Gestioná el listado de alumnos, asignales materias y editá su información.</p>
+    <button mat-stroked-button color="primary">Ver alumnos</button>
+  </div>
+
+  <div class="card" routerLink="/dashboardB">
+    <mat-icon class="card-icon">menu_book</mat-icon>
+    <h3>Materias</h3>
+    <p>Creá y administrá las materias disponibles en el sistema.</p>
+    <button mat-stroked-button color="primary">Ver materias</button>
+  </div>
+
+  <div class="card" routerLink="/dashboardC">
+    <mat-icon class="card-icon">bar_chart</mat-icon>
+    <h3>Dashboard</h3>
+    <p>Visualizá estadísticas y gráficos de alumnos y materias.</p>
+    <button mat-stroked-button color="primary">Ver dashboard</button>
+  </div>
+
+</div>
