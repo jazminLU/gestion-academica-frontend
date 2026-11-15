@@ -9,7 +9,7 @@
 html {
   @include mat.theme((
     color: (
-      primary: mat.$azure-palette,
+      primary: mat.$violet-palette,
       tertiary: mat.$blue-palette,
     ),
     typography: Roboto,
@@ -39,19 +39,22 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root {
-  --app-primary: #4f8cff;
-  --app-primary-dark: #3f6fe0;
-  --app-gradient: linear-gradient(135deg, #4f8cff 0%, #3f6fe0 100%);
-  --app-hero-gradient: linear-gradient(135deg, #3f6fe0 0%, #4f8cff 55%, #6ea8fe 100%);
-  --app-text: #1e2a4a;
-  --app-text-muted: #6b7290;
-  --app-bg: #f4f6fb;
-  --app-border: #e3e7f3;
+  /* Morado oscuro -> morado pastel, con celeste pastel como acento */
+  --app-primary: #7c3aed;
+  --app-primary-dark: #5b21b6;
+  --app-pastel-purple: #c4b5fd;
+  --app-pastel-blue: #93c5fd;
+  --app-gradient: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  --app-hero-gradient: linear-gradient(135deg, #5b21b6 0%, #8b5cf6 50%, #93c5fd 100%);
+  --app-text: #352b52;
+  --app-text-muted: #726a8a;
+  --app-bg: #f5f3fc;
+  --app-border: #e6e1f7;
   --app-radius-lg: 20px;
   --app-radius-md: 14px;
   --app-radius-pill: 999px;
-  --app-shadow: 0 10px 30px rgba(30, 41, 90, 0.08);
-  --app-shadow-hover: 0 16px 40px rgba(30, 41, 90, 0.14);
+  --app-shadow: 0 10px 30px rgba(91, 33, 182, 0.08);
+  --app-shadow-hover: 0 16px 40px rgba(91, 33, 182, 0.16);
 }
 
 body {
@@ -62,11 +65,11 @@ body {
   background: var(--app-gradient) !important;
   color: #fff !important;
   border-radius: var(--app-radius-pill) !important;
-  box-shadow: 0 8px 20px rgba(79, 140, 255, 0.35) !important;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.32) !important;
   transition: transform 0.15s ease, box-shadow 0.15s ease !important;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(79, 140, 255, 0.45) !important;
+    box-shadow: 0 12px 26px rgba(124, 58, 237, 0.42) !important;
   }
 }
