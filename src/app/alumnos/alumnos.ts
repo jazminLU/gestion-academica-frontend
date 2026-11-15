@@ -37,7 +37,7 @@ export class AlumnosComponent implements OnInit {
   displayedColumns: string[];
 
   pageIndex = 0;
-  pageSize = 10;
+  pageSize = 5;
   totalItems = 0;
   filtroNombre = '';
 
