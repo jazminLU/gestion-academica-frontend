@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../services/auth-service';
 import { RegistrarDto } from '../interfaces/RegistrarDto';
 import Swal from 'sweetalert2';
+import '@lottiefiles/lottie-player';
 
 @Component({
   selector: 'app-register',
   imports: [CommonModule, FormsModule, RouterModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './register.html',
   styleUrl: './register.scss',
 })

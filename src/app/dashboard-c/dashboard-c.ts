@@ -1,9 +1,10 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Chart, registerables } from 'chart.js';
 import { forkJoin } from 'rxjs';
 import { alumnosService } from '../services/AlumnoService';
 import { MateriaService } from '../services/materia-service';
+import '@lottiefiles/lottie-player';
 
 Chart.register(...registerables);
 
@@ -11,6 +12,7 @@ Chart.register(...registerables);
   selector: 'app-dashboard-c',
   standalone: true,
   imports: [CommonModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './dashboard-c.html',
   styleUrl: './dashboard-c.scss',
 })

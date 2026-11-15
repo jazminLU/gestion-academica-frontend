@@ -4,6 +4,15 @@
   <div class="blob blob-c"></div>
 
   <div class="auth-card">
+    <lottie-player
+      class="auth-animation"
+      src="/paper-plane.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+
     <h2>Crear cuenta</h2>
 
     <form (ngSubmit)="onSubmit()" #registerForm="ngForm" class="auth-form">

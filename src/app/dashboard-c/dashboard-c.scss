@@ -10,11 +10,30 @@
   }
 }
 
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .page-title {
-  margin: 0 0 28px;
+  margin: 0;
   font-size: 28px;
   font-weight: 700;
   color: var(--app-text);
+}
+
+.dashboard-animation {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
 }
 
 .stats-row {

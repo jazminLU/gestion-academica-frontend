@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AuthService } from '../services/auth-service';
+import '@lottiefiles/lottie-player';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { AuthService } from '../services/auth-service';
     MatButtonModule,
     MatIconModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

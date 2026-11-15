@@ -1,10 +1,23 @@
 <div class="hero">
-  <span class="hero-welcome" *ngIf="nombreUsuario">
-    <span class="hero-welcome-wave">👋</span>
-    Bienvenido, {{ nombreUsuario }}
-  </span>
-  <h1 class="hero-title">Sistema de Gestión Académica</h1>
-  <p class="hero-subtitle">Administrá alumnos, materias y más desde un solo lugar.</p>
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-welcome" *ngIf="nombreUsuario">
+        <span class="hero-welcome-wave">👋</span>
+        Bienvenido, {{ nombreUsuario }}
+      </span>
+      <h1 class="hero-title">Sistema de Gestión Académica</h1>
+      <p class="hero-subtitle">Administrá alumnos, materias y más desde un solo lugar.</p>
+    </div>
+
+    <lottie-player
+      class="hero-animation"
+      src="/education-edit.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
 </div>
 
 <div class="cards-grid">
