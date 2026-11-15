@@ -5,6 +5,14 @@ gestión de Alumnos y Materias. Consume la API REST de
 [CLASE_ORM](https://github.com/jazminLU/CLASE_ORM) (ASP.NET Core 8 +
 Clean Architecture + JWT).
 
+![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=flat&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat&logo=typescript&logoColor=white)
+![Angular Material](https://img.shields.io/badge/Angular%20Material-20.2-757575?style=flat&logo=angular&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-7.8-B7178C?style=flat&logo=reactivex&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.4-FF6384?style=flat&logo=chartdotjs&logoColor=white)
+![SweetAlert2](https://img.shields.io/badge/SweetAlert2-11.26-FF7E00?style=flat&logo=javascript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-18-5FA04E?style=flat&logo=node.js&logoColor=white)
+
 ## Tecnologías
 
 - Angular 20 (standalone components)
