@@ -1,16 +1,6 @@
 <div class="page-container">
 
-  <div class="dashboard-header">
-    <h2 class="page-title">Dashboard</h2>
-    <lottie-player
-      class="dashboard-animation"
-      src="/financial-stats.json"
-      background="transparent"
-      speed="1"
-      loop
-      autoplay>
-    </lottie-player>
-  </div>
+  <h2 class="page-title">Dashboard</h2>
 
   <div class="stats-row">
     <div class="stat-card">
@@ -26,6 +16,14 @@
   <div class="charts-grid">
     <div class="chart-card">
       <canvas #barChart></canvas>
+      <lottie-player
+        class="dashboard-animation"
+        src="/financial-stats.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay>
+      </lottie-player>
     </div>
     <div class="chart-card">
       <canvas #doughnutChart></canvas>
