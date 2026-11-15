@@ -65,7 +65,7 @@ export class DashboardC implements OnInit, AfterViewInit {
   }
 
   private buildCharts() {
-    const colors = ['#1976d2', '#42a5f5', '#1565c0', '#90caf9', '#bbdefb', '#0d47a1'];
+    const colors = ['#5b21b6', '#7c3aed', '#8b5cf6', '#a78bfa', '#c4b5fd', '#93c5fd'];
 
     new Chart(this.barChartRef.nativeElement, {
       type: 'bar',
