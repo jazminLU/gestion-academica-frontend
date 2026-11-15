@@ -64,8 +64,12 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./solicitudes/solicitudes').then(m => m.Solicitudes),
         canActivate: [authGuard]
+    },
+
+    {
+        path: '**',
+        loadComponent: () =>
+            import('./not-found/not-found').then(m => m.NotFound)
     }
-
-
 
 ];
