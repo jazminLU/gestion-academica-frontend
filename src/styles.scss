@@ -37,3 +37,36 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --app-primary: #4f8cff;
+  --app-primary-dark: #3f6fe0;
+  --app-gradient: linear-gradient(135deg, #4f8cff 0%, #3f6fe0 100%);
+  --app-hero-gradient: linear-gradient(135deg, #3f6fe0 0%, #4f8cff 55%, #6ea8fe 100%);
+  --app-text: #1e2a4a;
+  --app-text-muted: #6b7290;
+  --app-bg: #f4f6fb;
+  --app-border: #e3e7f3;
+  --app-radius-lg: 20px;
+  --app-radius-md: 14px;
+  --app-radius-pill: 999px;
+  --app-shadow: 0 10px 30px rgba(30, 41, 90, 0.08);
+  --app-shadow-hover: 0 16px 40px rgba(30, 41, 90, 0.14);
+}
+
+body {
+  background: var(--app-bg);
+}
+
+.btn-gradient {
+  background: var(--app-gradient) !important;
+  color: #fff !important;
+  border-radius: var(--app-radius-pill) !important;
+  box-shadow: 0 8px 20px rgba(79, 140, 255, 0.35) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(79, 140, 255, 0.45) !important;
+  }
+}
