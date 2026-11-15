@@ -50,6 +50,20 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./dashboard-c/dashboard-c').then(m => m.DashboardC),
         canActivate: [authGuard]
+    },
+
+    {
+        path: 'mis-materias',
+        loadComponent: () =>
+            import('./mis-materias/mis-materias').then(m => m.MisMaterias),
+        canActivate: [authGuard]
+    },
+
+    {
+        path: 'solicitudes',
+        loadComponent: () =>
+            import('./solicitudes/solicitudes').then(m => m.Solicitudes),
+        canActivate: [authGuard]
     }
 
 

@@ -1,8 +1,5 @@
-export interface CrearAlumnoDto{
+export interface CrearAlumnoDto {
 
-    nombre:string;
-    apellido:string;
-    email:string;
-    
+    nombre: string;
 
 }
