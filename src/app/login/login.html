@@ -4,6 +4,15 @@
   <div class="blob blob-c"></div>
 
   <div class="auth-card">
+    <lottie-player
+      class="auth-animation"
+      src="/space-areal.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+
     <h2>Iniciar sesión</h2>
 
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="auth-form">
